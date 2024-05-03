@@ -1,0 +1,120 @@
+.trending {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.trending__foods, .trending__drinks {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    min-height: 640px;
+    align-items: center;
+}
+
+.trending__content {
+    flex: 1;
+    padding: 32px 64px;
+}
+
+.trending__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending__icon {
+    background-color: var(--primary-color);
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending__icon img {
+    width: 12px;
+    height: 12px;
+}
+
+.trending__list li {
+    min-width: 210px;
+    display: flex;
+    gap: 16px;
+    flex: 1;
+}
+
+.trending__list p {
+    font-family: var(--plus-jakarta-sans);
+    font-size: 16px;
+}
+
+.trending__image {
+    display: flex;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+    padding: 32px 64px;
+    min-height: 640px;
+}
+
+.trending__foods .trending__image {
+    background-image: url('../../assets/japanese_sushi.png');
+}
+
+.trending__image img {
+    width: 254px;
+    height: 260px;
+    object-fit: contain;
+}
+
+.trending__discover {
+    border-radius: 100%;
+    font-family: var(--plus-jakarta-sans);
+    font-size: 18px;
+    width: 160px;
+    height: 160px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;   
+    cursor: pointer;
+    position: absolute;
+    left: 44%;
+    top: 44%;
+    z-index: 3;
+}
+
+
+/*Arrows*/
+
+.trending__arrow {
+    position: absolute;
+    z-index: 3;
+}
+
+.trending__arrow.left {
+    left: 49.85%;
+}
+
+.trending__arrow.bottom {
+    right: 6.5%;
+    top: 98.5%;
+}
+
+.trending__arrow.up {
+    bottom: 98.5%;
+    left: 6.5%;
+}
+
+.trending__arrow.rotate {
+    transform: rotate(180deg);
+}
